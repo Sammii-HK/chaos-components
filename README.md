@@ -9,7 +9,6 @@ Each was built with real care (hand-tuned springs, cursor-reactive colour, keybo
 | Component | Charge |
 | --- | --- |
 | Magnetic button | Moving the target: it lunges at your cursor, so you never click where you aimed |
-| Icon button | Moving the target, repeat offender |
 | Fluid tooltip | Loitering: follows the cursor instead of staying by what it describes |
 | Shimmer text | Being a screensaver: a light band that sweeps forever |
 | Tilt card | Leaning: good content at an angle for no reason |

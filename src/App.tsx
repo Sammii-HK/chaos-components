@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Heart, Settings, Sparkles, Trash2 } from "lucide-react";
 import { PointerProvider } from "./lib/pointer-context";
 import { CursorGlow } from "./lib/cursor-glow";
 import { MagneticButton } from "./crimes/magnetic-button";
-import { IconButton } from "./crimes/icon-button";
 import { FluidTooltip } from "./crimes/fluid-tooltip";
 import { ShimmerText } from "./crimes/shimmer-text";
 import { TiltCard } from "./crimes/tilt-card";
@@ -25,27 +23,6 @@ const crimes: Crime[] = [
     charge: "Moving the target",
     evidence: "Lunges at your cursor with spring physics, so the thing you're aiming at is never quite where you aimed.",
     exhibit: <MagneticButton>Try to click me</MagneticButton>,
-  },
-  {
-    name: "Icon button",
-    charge: "Moving the target, repeat offender",
-    evidence: "Same magnetic pull, only smaller, and usually in a row of four.",
-    exhibit: (
-      <div className="flex items-center gap-3">
-        <IconButton aria-label="Like">
-          <Heart size={16} />
-        </IconButton>
-        <IconButton aria-label="Sparkle">
-          <Sparkles size={16} />
-        </IconButton>
-        <IconButton aria-label="Settings">
-          <Settings size={16} />
-        </IconButton>
-        <IconButton aria-label="Delete">
-          <Trash2 size={16} />
-        </IconButton>
-      </div>
-    ),
   },
   {
     name: "Fluid tooltip",
